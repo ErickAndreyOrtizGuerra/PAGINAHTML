@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Futbol</title>
+    <link rel="stylesheet" href="estilos.css">
+     <style>
+        .equipo__image {
+            width: 24%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+    <style>
+        .jugador__image{
+            width: 24%;
+            height: auto;
+            object-fit: cover;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <h1 class="header__title">El Futbol Nos Une</h1>
+            <nav class="header__nav">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#noticias" class="nav__link">Noticias</a></li>
+                    <li class="nav__item"><a href="#equipos" class="nav__link">Equipos</a></li>
+                    <li class="nav__item"><a href="#jugadores" class="nav__link">Jugadores</a></li>
+                    <li class="nav__item"><a href="#contacto" class="nav__link">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="noticias" class="section">
+        <div class="container">
+            <h2 class="section__title">Últimas Noticias</h2>
+            <article class="article">
+                <h3 class="article__title">Guatemala jugará ante Panamá en el emblemático Estadio Rommel Fernández</h3>
+                <p class="article__content">Panamá enfrentará a Guatemala el próximo domingo 17 de octubre, en el Estadio Rommel Fernández, en la tercera jornada del Grupo A de la Liga A en la Liga de Naciones de la Concacaf. Será un partido clave para definir a los clasificados a los cuartos de final de la competición que otorga seis boletos a la Copa América USA 2024.</p>
+            </article>
+
+            <article class="article">
+                <h3 class="article__title">FCF anunció cuándo saldrá la boletería para el Colombia vs. Uruguay</h3>
+                <p class="article__content">La Selección Colombia continúa su camino en las Clasificatorias Sudamericanas rumbo a la Copa Mundial de la FIFA 2026. Después de los dos primeros juegos, llegará la doble fecha de octubre donde el equipo colombiano enfrentará a Uruguay en Barranquilla y a Ecuador en Quito.</p>
+            </article>
+        </div>
+    </section>
+
+   <section id="equipos" class="section">
+        <div class="container">
+            <h2 class="section__title">Equipos Destacados</h2>
+            <div class="equipo">
+                <img src="https://seuladogeek.com.br/wp-content/uploads/2022/02/Logotipo-de-Real-Madrid-FC.png" alt="Equipo 1" class="equipo__image">
+                <h3 class="equipo__title">Real Madrid </h3>
+                <p class="equipo__description">El Real Madrid Club de Fútbol, comúnmente conocido como Real Madrid, es una institución deportiva con sede en Madrid, capital española. Los orígenes del club se remontan hasta el 6 de marzo de 1902, año en el que fue declarado y registrado como club de fútbol por sus socios. Cuenta con los siguientes titulos: 35 Ligas 20 Copas del Rey, 12 Supercopas de España, 1 Copa de Liga, 14 Champions League | Champions League (8) + Copas de Europa (6) 2 Copa de la UEFA | Copa de la UEFA (2) + Europa League (0) 8 Copas Intercontinental/ Mundiales de Clubes | Copas Intercontinental (3) + Mundial de Clubes -FIFA World Cup- (5) 5 Supercopas de Europa 1 Copa Eva Duarte</p>
+            </div>
+
+           <div class="equipo">
+                <img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/47/FC_Barcelona_%28crest%29.svg/1200px-FC_Barcelona_%28crest%29.svg.png" alt="Equipo 2" class="equipo__image">
+                <h3 class="equipo__title">Barcelona</h3>
+                <p class="equipo__description">Titulos: 27 Ligas, 31 Copas del Rey, 14 Supercopas de España, 2 Copas de Liga, 5 Champions League, 3 Mundiales de Clubes, 5 Supercopas de Europa, 4 Recopas de Europa y 3 Copas Eva Duarte.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="jugadores" class="section">
+        <div class="container">
+            <h2 class="section__title">Jugadores Destacados</h2>
+            <div class="jugador">
+                <img src="https://www.si.com/.image/t_share/MTk2NzQ0NjUxMDk1NDE4NDk4/cristiano-ronaldo-festeja.jpg" alt="Jugador 1" class="jugador__image">
+                <h3 class="jugador__title">Cristiano Ronaldo</h3>
+                <p class="jugador__position">Posición: Delantero</p>
+            </div>
+
+            <div class="jugador">
+                <img src="https://media.admagazine.com/photos/637d11a6e63c8afac40e7a01/1:1/w_2896,h_2896,c_limit/1442809583" alt="Jugador 2" class="jugador__image">
+                <h3 class="jugador__title">Lionel Messi</h3>
+                <p class="jugador__position">Posición: Delantero</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="section">
+        <div class="container">
+            <h2 class="section__title">Contacto</h2>
+            <form action="enviar.php" method="post" class="contact-form">
+                <label for="nombre" class="contact-form__label">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required class="contact-form__input"><br>
+
+                <label for="email" class="contact-form__label">Email:</label>
+                <input type="email" id="email" name="email" required class="contact-form__input"><br>
+
+                <input type="submit" value="Enviar" class="contact-form__submit">
+            </form>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <p class="footer__text">&copy; 2023 Fútbol</p>
+        </div>
+    </footer>
+</body>
+</html>
